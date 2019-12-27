@@ -4,11 +4,13 @@
   "description": "Curso de nodejs",
   "main": "index.js",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node c10_inicserv_masfuncionesNpm.js",
+    "desarrollo": "node c10_inicserv_masfuncionesNpm.js"
   },
   "repository": {
     "type": "git",
