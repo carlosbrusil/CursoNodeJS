@@ -1,0 +1,10 @@
+var path=require('path');
+var util=require('util');
+var v8 = require('v8');
+var fuente=path.basename(__filename);
+var directorio=path.basename(__dirname);
+var direccion=util.format("La dieccion es: %10s / %10s",directorio,fuente);
+//console.log("nombre del archivo fuente   "+path.basename(__filename));
+//console.log("nombre del directorio actual"+path.basename(__dirname));
+console.log(direccion);
+console.log(' estadisticas actuales \n',  v8.getHeapStatistics());
