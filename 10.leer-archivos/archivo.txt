@@ -1,0 +1,3 @@
+﻿nombre          direccion       	tlf
+Carlos Brusil	Bolivar 311 y Colombia	0968438440
+Mayte Carito	Pastaza 146 S. Jorge	2330110
