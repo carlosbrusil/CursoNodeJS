@@ -6,5 +6,5 @@ process.stdin.on('data',function(data){
     process.exit();
 
 });
-process.stdout.write(__dirname);
+
 

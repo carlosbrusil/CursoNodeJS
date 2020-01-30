@@ -1,14 +1,13 @@
-var preguntas=['nombre ','edad ','direccion '];
-var respuestas=[];
+
 var opcion=0;
-function escribe(i){
+function escribe(){
     process.stdout.write("1.- SUMA\n");
     process.stdout.write("2.- RESTA\n");
     process.stdout.write("3.- SALIR\n");
     process.stdout.write("     Que opcion desea ");
 }
-process.stdin.on('data',function(data){
-    opcion=data.toString().trim().valueOf();
+process.stdin.on('data',function(entrada){
+    opcion=entrada.toString().trim().valueOf();
     switch (opcion){
         case "1":
             process.stdout.write("SUMA \n");
@@ -21,10 +20,8 @@ process.stdin.on('data',function(data){
         default:
             process.stdout.write("valor es" + opcion + "Error, escoga otra vez \n");
     }
-    if (respuestas.length<preguntas.length){
-        escribe(respuestas.length);
-    }else{
-        process.exit();
+    if (opcion!="!=3"){
+        escribe();
     }
 });
-escribe(0);
+escribe();
