@@ -1,6 +1,6 @@
-var path=require('path');
-var util=require('util');
-var v8 = require('v8');
+var path=require('path');   // obtiene objetos de nuestro directorio o camino
+var util=require('util');   // formatea las salidas de diferentes maneras
+var v8 = require('v8');     // para estadisticas de procesos actuales
 var fuente=path.basename(__filename);
 var directorio=path.basename(__dirname);
 var direccion=util.format("La direccion es: %s / %s",directorio,fuente);
