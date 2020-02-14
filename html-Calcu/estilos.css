@@ -1,0 +1,27 @@
+.calculadora{  /* dar formato a la clase calculadora */
+    display: block;     /* display bloqueado */
+    margin:0 auto;      /* para centra la calculadora  sup-izq  segun padding*/
+    padding: 20px;      /* paddging de nn pixeles */
+    background-color: #DC4C46;  /* color del cuadro contenedor */
+    width: 300px;       /* ancho del cuadro */
+    height: 700px;      /* alto del cuadro */
+    border-radius: 25px; /* borde redondeado */
+}
+.calculadora td button{
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+}
+#resultado{
+    display: block;          /* display resultado bloqueado */
+    margin-bottom: 50px;     /* margen inferior */
+    width: 300px;            /* ancho de la pantalla de resultados */
+    height: 100px;           /* alto de pantalla de resultados */
+    text-align: center;       /* texto centrado */
+    font-size: 40px;         /* tamaño de la fuente mayor a los botones*/
+    line-height: 100px;       /* alto de la linea */
+    background-color: #fff; /* color blanco de pantalla */
+    border-radius: 20px;       /* borde redondeado */
+    overflow-y: scroll;       /* si no alcanza en la linea se hace scroll*/
+
+}
