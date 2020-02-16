@@ -1,0 +1,38 @@
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(bg.jpg) #000; /* imagen de fondo del cuerpo, sino carga es negro */
+    background-size: cover;  /* la imagen se ajuste al tamaño de la pantalla del user */
+    color:#fff;           /* color blanco para el texto */
+    font-size: 16px;        /* tamaño del texto 16 pixeles */
+}
+.wrap{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.widget {
+    width: 40%;
+    margin: 2em;
+    /*margin: 32px;*/
+}
+.widget p {
+    display: inline-block;      /* los parrafos de la division en el mismo bloque */
+    line-height: lem;           /* tamaño de los parrafos */
+}
+.fecha{
+    font-family: Oswald, Arial;  /*  fuente oswald importada, tipo arial*/*
+    text-align: center;          /* texto centrado */
+    font-size: 1.5em;            /* tamaño de fuente */
+    /*margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
+    margin-bottom: 5px;
+    background: rgba(0,0,0,.5);
+
+
+}
+
+

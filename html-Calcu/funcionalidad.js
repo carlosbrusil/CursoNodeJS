@@ -28,7 +28,8 @@ function inicio(){
     var memoria=document.getElementById("memoria");
     var sacarmemoria=document.getElementById("sacarmemoria");
     var raiz=document.getElementById("raiz");
-    var salir=document.getElementById("salir");
+    var salir=document.getElementById("Salir");
+    var version=document.getElementById("Version");
     //
     // eventos de numeros
     uno.onclick=function(e){
@@ -109,7 +110,12 @@ function inicio(){
     }
     //
     salir.onclick=function(e){
-        process.exit();
+        //process.exit();
+        window.close();
+    }
+    version.onclick=function(e){
+        resetear();
+        resultado.textContent="Version 1.0 CB";
     }
     
 }

@@ -4,7 +4,7 @@
     padding: 20px;      /* paddging de nn pixeles */
     background-color: #DC4C46;  /* color del cuadro contenedor */
     width: 300px;       /* ancho del cuadro */
-    height: 700px;      /* alto del cuadro */
+    height: 600px;      /* alto del cuadro */
     border-radius: 25px; /* borde redondeado */
 }
 .calculadora td button{
@@ -24,4 +24,20 @@
     border-radius: 20px;       /* borde redondeado */
     overflow-y: scroll;       /* si no alcanza en la linea se hace scroll*/
 
+}
+#Version{
+    /*display: block;*/
+    width: 150px;             /* ancho doble que los botones normales*/
+    height: 35px;             /* alto mitad de un boton normal */
+    font-size: 15px;          /* tamaño de fuente mas pequeño */
+    background-color: #fff; /* color blanco de pantalla */
+    border-radius: 20px;      /* borde redondeado */
+}
+#Salir{
+    /*display: block;*/
+    width: 150px;             /* ancho doble que un boton normal*/
+    height: 35px;             /* alto mitad de un boton normal */
+    font-size: 15px;          /* tamaño de fuente menor a botones */
+    background-color: #fff; /* color blanco de pantalla */
+    border-radius: 20px;      /* borde redondeado */
 }
