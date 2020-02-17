@@ -4,16 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* caracteristicas para el cuerpo */
 body{
-    background: url(bg.jpg) #000; /* imagen de fondo del cuerpo, sino carga es negro */
-    background-size: cover;  /* la imagen se ajuste al tamaño de la pantalla del user */
+    background: url(fondo2.jpg) #000; /* imagen de fondo del cuerpo, sino carga es negro */
+    background-size:cover;  /* la imagen se ajuste al tamaño de la pantalla del user */
     color:#fff;           /* color blanco para el texto */
     font-size: 16px;        /* tamaño del texto 16 pixeles */
 }
-.wrap{
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
+.envoltura{
+    width: 100%;             /* area con respecto al ancho de la envoltura que ocupa el reloj */
+    max-width: 800px;       /* ancho de toda la pantalla */
+    /*margin: auto;*/
 }
 .widget {
     width: 40%;
@@ -22,17 +23,33 @@ body{
 }
 .widget p {
     display: inline-block;      /* los parrafos de la division en el mismo bloque */
-    line-height: lem;           /* tamaño de los parrafos */
+    line-height: 1em;           /* tamaño de los parrafos */
 }
 .fecha{
-    font-family: Oswald, Arial;  /*  fuente oswald importada, tipo arial*/*
-    text-align: center;          /* texto centrado */
+    font-family: Oswald, Arial;  /*  fuente oswald importada, tipo arial*/
+    text-align:center;          /* texto centrado */
     font-size: 1.5em;            /* tamaño de fuente */
-    /*margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
-    margin-bottom: 5px;
-    background: rgba(0,0,0,.5);
+    margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
+    background: rgba(0,0,0,.5); /* color de fondo */
+    padding: 20px;
+    width: 100%;
 
-
+}
+.reloj{
+    font-family: Oswald, Arial;  /*  fuente oswald importada, tipo arial*/
+    width: 100%;
+    padding: 20px;
+    text-align: center;          /* texto centrado */
+    font-size: 4em;            /* tamaño de fuente */
+    background: rgba(0,0,0,.5); 
+}
+.reloj .caja-segundos{
+    display: inline-block;
+}
+.reloj .segundos,
+.reloj .ampm{
+    display: block;
+    font-size: 2rem;
 }
 
 
