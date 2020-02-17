@@ -13,7 +13,7 @@ body{
 }
 .envoltura{
     width: 100%;             /* area con respecto al ancho de la envoltura que ocupa el reloj */
-    max-width: 800px;       /* ancho de toda la pantalla */
+    max-width: 1000px;       /* ancho de toda la pantalla */
     /*margin: auto;*/
 }
 .widget {

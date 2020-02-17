@@ -1,5 +1,5 @@
 function inicio(){
-    alert("hola mundo");
+    //alert("hola mundo");
     var actualizahora=function(){
         var fecha=new Date(),
             horas=fecha.getHours(),
@@ -24,6 +24,24 @@ function inicio(){
         var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
         pMes.textContent=meses[mes];
         pYear.textContent=year;
+        //
+        // asignar datos de la hora
+        if (horas>12){
+            horas=horas-12;
+            ampm="PM";
+        }
+        else{
+            ampm="AM";
+        }
+        if (horas==0){horas=12};                  // si la hora es 0  entonces desplegar 12
+        pAMPM.textContent=ampm;
+        pHoras.textContent=horas;
+        if (minutos<10){minutos="0"+minutos;}     // si minutos menor a 10 se concatena al inicio del # el "0"
+        if (segundos<10){segundos="0"+segundos;}  // idem al anterior
+        pMinutos.textContent=minutos;
+        pSegundos.textContent=segundos;
     }
-    actualizahora();
+    actualizahora(); // llamada  a la funcion de actualizar hora
+    var intervalo=setInterval(actualizahora,1000); // se fija el intervalo de ejecucion de function     
+                                                   // actualizar hora para que ejecute cada segundo
 }
