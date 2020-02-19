@@ -18,7 +18,7 @@ body{
 }
 .widget {
     width: 40%;
-    margin: 1em;
+    margin: 2em;
     /*margin: 32px;*/
 }
 .widget p {
@@ -30,6 +30,7 @@ body{
     text-align:center;          /* texto centrado */
     font-size: 1.5em;            /* tamaño de fuente */
     margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
+    /*margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
     background: rgba(0,0,0,.5); /* color de fondo */
     padding: 20px;
     width: 100%;
@@ -40,8 +41,9 @@ body{
     width: 100%;
     padding: 20px;
     text-align: center;          /* texto centrado */
-    font-size: 3em;            /* tamaño de fuente */
+    font-size: 4em;            /* tamaño de fuente */
     background: rgba(0,0,0,.5); 
+    margin-bottom: 0.15em;
 }
 .reloj .caja-segundos{
     display: inline-block;
@@ -51,5 +53,20 @@ body{
     display: block;
     font-size: 2rem;
 }
+.cronometro{
+    display: inline-block;
+    font-family: Oswald, Arial;  /*  fuente oswald importada, tipo arial*/
+    text-align:center;          /* texto centrado */
+    font-size: 2em;            /* tamaño de fuente */
+    background: rgba(0,0,0,.5); /* color de fondo */
+    padding: 20px;                /* altura de bloque o divis proporcional a fuente*/
+    width: 100%;
+}
+.cronometro .botones p button{
 
+        width: 60px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 10px;
 
+}

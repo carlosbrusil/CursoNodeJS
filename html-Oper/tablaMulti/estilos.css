@@ -1,3 +1,19 @@
+.envoltura{
+    width: 100%;             /* area con respecto al ancho de la envoltura que ocupa el reloj */
+    max-width: 1000px;       /* ancho de toda la pantalla */
+    margin: auto;
+}
+.envoltura .cont4{
+    display: block;
+    width: 100%;
+    /*margin: 1em;*/
+    text-align:center;          /* texto centrado */
+    font-size: 1.5em;            /* tamaño de fuente */
+    margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
+    background: rgba(0,0,0,.5); /* color de fondo */
+    padding: 10px;
+    overflow-y: scroll;       /* si no alcanza en la linea se hace scroll*/
+}
 .calculadora{  /* dar formato a la clase calculadora */
     display: block;     /* display bloqueado */
     margin:0 auto;      /* para centra la calculadora  sup-izq  segun padding*/
@@ -11,6 +27,10 @@
     width: 70px;
     height: 70px;
     font-size: 25px;
+}
+.widget p {
+    display: block;      /* los parrafos de la division en el mismo bloque */
+    line-height: 1em;           /* tamaño de los parrafos */
 }
 #resultado{
     display: block;          /* display resultado bloqueado */

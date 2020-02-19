@@ -4,6 +4,7 @@ var operacion;
 var estado=true;
 var M;
 var RM;
+var tabla;
 function inicio(){
     //alert("hola mundo");
     // variables
@@ -33,10 +34,12 @@ function inicio(){
     //
     // eventos de numeros
     uno.onclick=function(e){
-        resultado.textContent=resultado.textContent + "1";
+        resultado.textContent= "TABLA DEL 1";
+        tabla =1;
     }
     dos.onclick=function(e){
-        resultado.textContent=resultado.textContent + "2";
+        resultado.textContent="TABLA DEL 2";
+        tabla=2;
     }    
     tres.onclick=function(e){
         resultado.textContent=resultado.textContent + "3";
@@ -105,7 +108,7 @@ function inicio(){
         operacion="^";
     }
     igual.onclick=function(e){
-        operandob=resultado.textContent;
+        //operandob=resultado.textContent;
         resolver();
     }
     //
@@ -140,24 +143,19 @@ function resetear(){
 //
 // funcion para resolver las operaciones matematicas
 function resolver(){
-    var res=0;
-    switch (operacion){
-        case "+":
-            res=parseFloat(operandoa)+parseFloat(operandob);
-            break;
-        case "-":
-            res=parseFloat(operandoa)-parseFloat(operandob);
-            break;
-        case "*":
-            res=parseFloat(operandoa)*parseFloat(operandob);
-            break;
-        case "/":
-            res=parseFloat(operandoa)/parseFloat(operandob);
-            break;
-        case "^":
-            res=Math.pow(parseFloat(operandoa),0.5);
-            break;
+    var text = document.createTextNode("TABLA DEL "+tabla);
+    //document.getElementById("cont4").append(text); 
+    var newdoc = document.createElement('p');
+    newdoc.appendChild(text); 
+    document.getElementsByTagName('p')[0].appendChild(newdoc);                                         
+    for (var i=1; i<=10;i++){
+        var res=tabla *i;
+        var text = document.createTextNode(`  ${i} *  ${tabla}  =  ${res} `);                               
+        //document.getElementById("cont4").appendChild(text); 
+        var newdoc = document.createElement('p');
+        newdoc.appendChild(text); 
+        document.getElementsByTagName('p')[0].appendChild(newdoc); 
     }
     resetear();
-    resultado.textContent=resultado.textContent+"\n"+res;
+    //resultado.textContent=resultado.textContent+"\n"+res;
 }
