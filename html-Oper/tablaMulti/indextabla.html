@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TABLAS DE MULTIPLICAR
+        </title>
+        <link type="text/css" href="estilostabla.css" rel="stylesheet">
+    </head>
+ 
+    <body onload="inicio();">
+        <h1>TABLAS DE MULTIPLICAR</h1>
+        <form>
+          <fieldset>
+              <legend>Metodo 1 - agregando lineas de parrafo</legend>
+              <label for="autor">Autor del trabajo<br/></label>
+              <input type="text" disabled value="Carlos Brusil" id="autor">
+              <p></p>
+              <label for="variable1">Ingrese la tabla<br/></label>
+              <input type="number" value ="1" min="1" max="20" step="1"id="variable1" required>
+              <p>Proceder con el siguiente boton<br/> -->
+                <input  id="calcular" type="button" value="CALCULAR">
+              </p>
+              <p>Resetear<br/>
+                <input type="reset">
+              </p>              
+            </fieldset>
+        </form>       
+        <div class="envoltura"><p id="cont4" class="cont4"></p></div>
+        <script src="funciontabla.js"></script>
+    </body>
+</html>

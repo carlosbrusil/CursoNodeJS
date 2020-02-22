@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PASAR UN INPUT A UNA VARIABLE JS</title>
+
+</head>
+<body>
+<h1>PASAR UNA ENTRADA DE UN INPUT A UNA VARIABLE EN JAVASCRIPT</h1>
+<h2>product code</h2>
+<!--<form name="form" action="" method="get">-->
+  <form>
+    <fieldset>
+        <input type="text" name="prod">
+        <h2>shelf code</h2>
+        <input type="text" name="shelf">
+        <p>VALOR uno</p>
+        <input type="number" value ="1" min="1" max="20" step="1" name="A">
+        <p>VALOR dos</p>
+        <input type="number" value ="1" min="1" max="20" step="1" name="B">
+        <P id="C">LA SUMA ES </P>
+    </fieldset>
+</form>
+
+<button onclick="sub()">Prueba</button>
+<script type="text/javascript">
+            //variables
+            var product = null;
+            var shelf = null;
+            var status = null;
+            var a=0,b=0,c;
+            //var a=null,b=null,c=null;
+            //submit
+            function sub(){
+                // pasar por nombre
+                product = document.getElementsByName("prod")[0].value;
+                shelf = document.getElementsByName("shelf")[0].value;
+                var C=document.getElementsByName("C")[0].value;
+                // pasar por id
+                a=parseInt(document.getElementsByName("A")[0].value);
+                b=parseInt(document.getElementsByName("B")[0].value);
+                //var C=document.getElementById("C").value;
+                //c=parseInt(a)+parseInt(b);
+                c=a+b;
+                C.textcontent=C.textcontent+c;
+                alert(product+" "+shelf+ "  La suma es "+c);
+            };
+</script>
+</body>
+</html>

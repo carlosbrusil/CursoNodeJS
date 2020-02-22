@@ -1,0 +1,16 @@
+.envoltura{
+    width: 60%;             /* area con respecto al ancho de la envoltura que ocupa el reloj */
+    max-width: 1000px;       /* ancho de toda la pantalla */
+    margin:auto;
+}
+.envoltura .cont4{
+    display: block;
+    width: 100%;
+    /*margin: 1em;*/
+    text-align:center;          /* texto centrado */
+    font-size: 1.5em;            /* tamaño de fuente */
+    margin-bottom: 0.3125em;     /* margen inferior respecto al siguiente elemento */
+    background: rgba(0,0,0,.5); /* color de fondo */
+    padding: 10px;
+    overflow-y: scroll;       /* si no alcanza en la linea se hace scroll*/
+}
