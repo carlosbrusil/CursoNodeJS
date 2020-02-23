@@ -11,9 +11,18 @@ const x=120;
 const y=25;
 exec('script.bat '+x+' '+ y,(err,sal)=>{
     if (err){
-        throw ('error',err);
-        //console.log("error al ejecutar scrip.bat")
+        //throw ('error',err);
+        console.log("error al ejecutar scrip.bat");
+        process.exit();
     }
     console.log("ejecucion de un comando 2 ");
+    console.log(sal);
+});
+exec("mkdir yapa",(err,sal)=>{
+    if (err){
+        console.log("error en crear yapa");
+        process.exit();
+    }
+    console.log("ejecucion de mkdir - se creo yapa");
     console.log(sal);
 });
