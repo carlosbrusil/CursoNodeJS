@@ -18,11 +18,11 @@ exec('script.bat '+x+' '+ y,(err,sal)=>{
     console.log("ejecucion de un comando 2 ");
     console.log(sal);
 });
-exec("mkdir yapa",(err,sal)=>{
+exec("mkdir yapa2",(err,sal)=>{
     if (err){
         console.log("error en crear yapa");
         process.exit();
     }
-    console.log("ejecucion de mkdir - se creo yapa");
+    console.log("ejecucion de mkdir - se creo yapa2");
     console.log(sal);
 });
