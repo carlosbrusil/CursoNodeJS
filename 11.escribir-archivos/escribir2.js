@@ -5,13 +5,16 @@ if (!fs.existsSync(archivo))    {console.log("archivo no existe CHEQUEO 1");
     //process.exit();
 }
 else
+{
     console.log("archivo existe");
-//  leeer archivo sincronicamente
-var salida=fs.readFileSync(archivo,"UTF-8");
-console.log(" El contenido original del archivo es \n",salida);
+    //  leeer archivo sincronicamente
+    var salida=fs.readFileSync(archivo,"UTF-8");
+    console.log(" El contenido original del archivo es \n",salida);
+}
+//
 // leer archivo de forma asincronica
 fs.access(archivo,fs.constants.F_OK,(err)=>{
-    if (err){
+if (err){
         console.log("no existe archivo CHEQUEO 2");
         // escribir archivo 1er vez de forma asincronica
 
@@ -21,10 +24,11 @@ fs.access(archivo,fs.constants.F_OK,(err)=>{
             {console.log("no se puede escribir en archivo.txt la 1era vez");
             process.exit();}
         else
-            console.log("se creo nueva contenido");
+            console.log("se creo contenido  en archivo.txt la 1era vez");
         });
-    }
-    else 
+}
+else
+{ 
     console.log("agregar");
         var nuevalinea="\nCarlos Brusil        Bolivar 311          0968438440";
         fs.appendFile(archivo,nuevalinea,(err)=>{
@@ -33,8 +37,9 @@ fs.access(archivo,fs.constants.F_OK,(err)=>{
                 console.log("Se agrego nueva linea");
         }
         )
+    }
 }
-    )
+)
 
 
 
