@@ -2,6 +2,7 @@ var fs=require("fs");
 fs.readdir("./",(err,contenido)=>{
     if (err){
         console.log("error leyendo directorio actual");
+        process.exit();
     }
     // proceso SYNCRONICO para leer el archivo del directorio de a lado
     console.log("contenido del directorio actual es \n",contenido);
