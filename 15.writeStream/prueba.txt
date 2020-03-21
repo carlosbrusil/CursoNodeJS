@@ -1,0 +1,4 @@
+informacion del archivo es 
+hola esta info es para probar
+la creacion del archivo prueba
+y agregar mediante write.stream
